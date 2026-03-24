@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Mail, ArrowRight, Download } from 'lucide-react'
 import { GitHubIcon, LinkedInIcon } from '../components/BrandIcons'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -21,6 +22,7 @@ export default function Home() {
 
   return (
     <motion.div variants={pageVariants} initial="initial" animate="enter" exit="exit">
+      <SEO path="/" lang={i18n.language.startsWith('pl') ? 'pl' : 'en'} />
       {/* ── Hero ── */}
       <section className="min-h-screen flex items-center justify-center pt-16">
         <div className="max-w-2xl mx-auto px-6 py-20 w-full flex flex-col items-center text-center">

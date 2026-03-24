@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { AlertCircle, Lightbulb, TrendingUp } from 'lucide-react'
 import { caseStudies } from '../data/caseStudies'
+import SEO from '../components/SEO'
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -36,6 +37,16 @@ export default function CaseStudies() {
 
   return (
     <motion.div variants={pageVariants} initial="initial" animate="enter" exit="exit">
+      <SEO
+        path="/case-studies"
+        lang={lang}
+        title={lang === 'pl' ? 'Case Studies' : 'Case Studies'}
+        description={
+          lang === 'pl'
+            ? 'Case studies Patryka Pawlaka — realne wdrożenia Zoho CRM, integracje REST API, automatyzacje procesów biznesowych. Konkretne problemy i rozwiązania.'
+            : 'Case studies by Patryk Pawlak — real Zoho CRM implementations, REST API integrations, business process automations. Real problems and solutions.'
+        }
+      />
       <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-6">
 

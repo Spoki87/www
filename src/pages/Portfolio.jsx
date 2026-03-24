@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { ExternalLink, Code2 } from 'lucide-react'
 import { GitHubIcon } from '../components/BrandIcons'
 import { projects } from '../data/projects'
+import SEO from '../components/SEO'
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -16,6 +17,16 @@ export default function Portfolio() {
 
   return (
     <motion.div variants={pageVariants} initial="initial" animate="enter" exit="exit">
+      <SEO
+        path="/portfolio"
+        lang={lang}
+        title={lang === 'pl' ? 'Portfolio' : 'Portfolio'}
+        description={
+          lang === 'pl'
+            ? 'Portfolio Patryka Pawlaka — projekty backendowe w Java, Spring Boot, REST API. Subscription Manager: mikroserwis z JWT, Redis, RabbitMQ, Docker.'
+            : 'Portfolio of Patryk Pawlak — backend projects in Java, Spring Boot, REST API. Subscription Manager: microservice with JWT, Redis, RabbitMQ, Docker.'
+        }
+      />
       <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-5xl mx-auto px-6">
 

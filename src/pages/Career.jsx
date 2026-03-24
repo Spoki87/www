@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Download, Briefcase, GraduationCap, Award, Calendar } from 'lucide-react'
 import { experience, education, certifications } from '../data/career'
+import SEO from '../components/SEO'
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -15,6 +16,16 @@ export default function Career() {
 
   return (
     <motion.div variants={pageVariants} initial="initial" animate="enter" exit="exit">
+      <SEO
+        path="/career"
+        lang={lang}
+        title={lang === 'pl' ? 'Kariera' : 'Career'}
+        description={
+          lang === 'pl'
+            ? 'Doświadczenie zawodowe Patryka Pawlaka — Backend Integration Developer, Zoho Developer, specjalista Zoho CRM i REST API. Warszawa.'
+            : 'Work experience of Patryk Pawlak — Backend Integration Developer, Zoho Developer, Zoho CRM and REST API specialist. Warsaw, Poland.'
+        }
+      />
       <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-6">
 
