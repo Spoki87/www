@@ -19,7 +19,7 @@ const skills = {
 }
 
 export default function Home() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <motion.div variants={pageVariants} initial="initial" animate="enter" exit="exit">
