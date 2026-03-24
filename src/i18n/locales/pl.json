@@ -21,6 +21,9 @@
     "cta_career": "Moja Kariera",
     "cta_portfolio": "Portfolio"
   },
+  "roadmap": {
+    "title": "Droga zawodowa"
+  },
   "about": {
     "title": "O mnie",
     "bio": "Jestem Backend Integration Developerem z kilkuletnim doświadczeniem w ekosystemie Zoho oraz integracjach REST API. Na co dzień zajmuję się projektowaniem architektury integracyjnej, automatyzacją procesów biznesowych i wdrożeniami produkcyjnymi. Mieszkam i pracuję w Warszawie.",
