@@ -86,14 +86,16 @@ export default function Career() {
                         <Calendar size={13} />
                         {item.period.start} — {item.period.end ?? t('career.present')}
                       </div>
-                      <ul className="space-y-2">
-                        {item.description[lang].map((point, i) => (
-                          <li key={i} className="flex gap-2.5 text-slate text-sm leading-relaxed">
-                            <span className="text-accent mt-1.5 shrink-0 text-xs">▸</span>
-                            {point}
-                          </li>
-                        ))}
-                      </ul>
+                      {item.description[lang].length > 0 && (
+                        <ul className="space-y-2">
+                          {item.description[lang].map((point, i) => (
+                            <li key={i} className="flex gap-2.5 text-slate text-sm leading-relaxed">
+                              <span className="text-accent mt-1.5 shrink-0 text-xs">▸</span>
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </motion.div>
                 ))}
