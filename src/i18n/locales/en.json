@@ -33,7 +33,8 @@
     "education": "Education",
     "certifications": "Certifications",
     "present": "Present",
-    "download_cv": "Download CV"
+    "download_cv": "Download CV",
+    "thesis": "Thesis"
   },
   "portfolio": {
     "title": "Portfolio",

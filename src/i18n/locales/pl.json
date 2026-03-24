@@ -33,7 +33,8 @@
     "education": "Edukacja",
     "certifications": "Certyfikaty",
     "present": "Teraz",
-    "download_cv": "Pobierz CV"
+    "download_cv": "Pobierz CV",
+    "thesis": "Praca dyplomowa"
   },
   "portfolio": {
     "title": "Portfolio",

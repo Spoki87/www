@@ -126,9 +126,12 @@ export default function Career() {
                   <Calendar size={13} />
                   {item.period.start} — {item.period.end}
                 </div>
-                <p className="text-slate text-sm italic border-l-2 border-accent/30 pl-3">
-                  {item.thesis[lang]}
-                </p>
+                <div className="border-l-2 border-accent/30 pl-3">
+                  <p className="text-fog text-xs uppercase tracking-widest mb-1">
+                    {t('career.thesis')}
+                  </p>
+                  <p className="text-slate text-sm italic">{item.thesis[lang]}</p>
+                </div>
               </motion.div>
             ))}
           </section>
