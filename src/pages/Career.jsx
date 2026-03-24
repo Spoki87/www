@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Download, Briefcase, GraduationCap, Award, Calendar } from 'lucide-react'
+import { SHOW_CV_DOWNLOAD } from '../config'
 import { experience, education, certifications } from '../data/career'
 import SEO from '../components/SEO'
 
@@ -35,14 +36,16 @@ export default function Career() {
               <h1 className="text-4xl font-bold text-snow mb-3">{t('career.title')}</h1>
               <div className="w-12 h-1 bg-accent rounded-full" />
             </div>
-            <a
-              href="/CV_Patryk_Pawlak.pdf"
-              download
-              className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
-            >
-              <Download size={16} />
-              {t('career.download_cv')}
-            </a>
+            {SHOW_CV_DOWNLOAD && (
+              <a
+                href="/CV_Patryk_Pawlak.pdf"
+                download
+                className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
+              >
+                <Download size={16} />
+                {t('career.download_cv')}
+              </a>
+            )}
           </div>
 
           {/* ── Experience ── */}

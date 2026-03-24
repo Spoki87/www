@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Mail, ArrowRight, Download } from 'lucide-react'
+import { SHOW_CV_DOWNLOAD } from '../config'
 import { GitHubIcon, LinkedInIcon } from '../components/BrandIcons'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
@@ -187,14 +188,16 @@ export default function Home() {
               <p className="text-slate text-lg leading-relaxed mb-8">
                 {t('about.bio')}
               </p>
-              <a
-                href="/CV_Patryk_Pawlak.pdf"
-                download
-                className="inline-flex items-center gap-2 border border-accent text-accent hover:bg-accent hover:text-white transition-all font-medium px-5 py-2.5 rounded-lg text-sm"
-              >
-                <Download size={16} />
-                {t('about.download_cv')}
-              </a>
+              {SHOW_CV_DOWNLOAD && (
+                <a
+                  href="/CV_Patryk_Pawlak.pdf"
+                  download
+                  className="inline-flex items-center gap-2 border border-accent text-accent hover:bg-accent hover:text-white transition-all font-medium px-5 py-2.5 rounded-lg text-sm"
+                >
+                  <Download size={16} />
+                  {t('about.download_cv')}
+                </a>
+              )}
             </motion.div>
 
             {/* Skills */}
