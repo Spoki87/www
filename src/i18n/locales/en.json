@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "Home",
+    "career": "Career",
+    "case_studies": "Case Studies",
+    "portfolio": "Portfolio"
+  },
+  "case_studies": {
+    "title": "Case Studies",
+    "subtitle": "Real problems, concrete solutions — and what came out of it",
+    "problem": "Problem",
+    "solution": "Solution",
+    "outcome": "Outcome",
+    "placeholder_title": "Title coming soon...",
+    "placeholder_content": "Description coming soon..."
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Backend Integration Developer",
+    "subtitle": "Specializing in REST API integrations and the Zoho platform. I translate business requirements into working systems.",
+    "cta_career": "My Career",
+    "cta_portfolio": "Portfolio"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I'm a Backend Integration Developer with several years of experience in the Zoho ecosystem and REST API integrations. Day-to-day I design integration architecture, automate business processes, and handle production deployments. I live and work in Warsaw.",
+    "skills_title": "Technologies",
+    "download_cv": "Download CV"
+  },
+  "career": {
+    "title": "Career",
+    "experience": "Experience",
+    "education": "Education",
+    "certifications": "Certifications",
+    "present": "Present",
+    "download_cv": "Download CV"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "See what I build",
+    "view_github": "GitHub",
+    "view_live": "Live Demo",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "tech_backend": "Backend",
+    "tech_frontend": "Frontend",
+    "coming_soon": "// more projects coming soon"
+  }
+}
