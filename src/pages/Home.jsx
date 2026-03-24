@@ -40,11 +40,11 @@ export default function Home() {
             {/* Decorative dashed ring */}
             <div className="absolute -inset-3 rounded-full border border-dashed border-accent/20 animate-spin" style={{ animationDuration: '20s' }} />
             {/* Photo circle */}
-            <div className="relative w-40 h-40 rounded-full border-2 border-accent/50 overflow-hidden bg-elevated flex items-center justify-center">
+            <div className="relative w-52 h-52 rounded-full border-2 border-accent/50 overflow-hidden bg-[#fafafa] flex items-center justify-center">
               <img
                 src="/photo.jpg"
                 alt="Patryk Pawlak"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none'
                   if (e.currentTarget.nextSibling) {
