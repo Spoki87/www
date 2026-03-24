@@ -28,18 +28,15 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center pt-16">
         <div className="max-w-2xl mx-auto px-6 py-20 w-full flex flex-col items-center text-center">
 
-          {/* Photo — centered, leading visual element */}
+          {/* Photo */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.1, duration: 0.6, ease: 'easeOut' }}
+            transition={{ delay: 0.1, duration: 0.5, ease: 'easeOut' }}
             className="relative mb-8"
           >
-            {/* Outer glow ring */}
-            <div className="absolute inset-0 rounded-full bg-accent/20 blur-3xl scale-150" />
-            {/* Decorative dashed ring */}
-            <div className="absolute -inset-3 rounded-full border border-dashed border-accent/20 animate-spin" style={{ animationDuration: '20s' }} />
-            {/* Photo circle */}
+            <div className="absolute inset-0 rounded-full bg-accent/15 blur-xl scale-150" />
+            <div className="absolute -inset-3 rounded-full border border-dashed border-accent/20" />
             <div className="relative w-52 h-52 rounded-full border-2 border-accent/50 overflow-hidden bg-[#fafafa] flex items-center justify-center">
               <img
                 src="/photo.jpg"
@@ -62,51 +59,32 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Greeting */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
+          {/* Name + title + subtitle */}
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-accent text-xs font-mono tracking-widest uppercase mb-2"
+            transition={{ delay: 0.25, duration: 0.45 }}
+            className="flex flex-col items-center mb-8"
           >
-            {t('hero.greeting')}
-          </motion.p>
-
-          {/* Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-5xl sm:text-6xl font-bold text-snow leading-tight mb-2"
-          >
-            Patryk Pawlak
-          </motion.h1>
-
-          {/* Title */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="text-accent text-lg font-medium mb-5"
-          >
-            {t('hero.title')}
-          </motion.p>
-
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="text-slate text-base leading-relaxed mb-8 max-w-md"
-          >
-            {t('hero.subtitle')}
-          </motion.p>
+            <p className="text-accent text-xs font-mono tracking-widest uppercase mb-2">
+              {t('hero.greeting')}
+            </p>
+            <h1 className="text-5xl sm:text-6xl font-bold text-snow leading-tight mb-2">
+              Patryk Pawlak
+            </h1>
+            <p className="text-accent text-lg font-medium mb-5">
+              {t('hero.title')}
+            </p>
+            <p className="text-slate text-base leading-relaxed max-w-md">
+              {t('hero.subtitle')}
+            </p>
+          </motion.div>
 
           {/* Social links */}
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.45, duration: 0.4 }}
             className="flex items-center justify-center gap-5 mb-8"
           >
             <a
@@ -140,9 +118,9 @@ export default function Home() {
 
           {/* CTA buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.4 }}
             className="flex items-center justify-center gap-4 flex-wrap"
           >
             <Link
