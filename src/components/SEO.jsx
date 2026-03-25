@@ -27,9 +27,30 @@ const PERSON_SCHEMA = {
     'Zoho Creator',
     'Zoho Desk',
     'Zoho Analytics',
+    'Zoho Flow',
+    'Zoho One',
+    'Zoho Books',
+    'Zoho Projects',
+    'Zoho Cliq',
+    'Zoho Campaigns',
+    'Zoho implementation',
+    'Zoho wdrożenie',
+    'Zoho customization',
+    'Zoho konfiguracja',
+    'Zoho maintenance',
+    'Zoho utrzymanie',
+    'Zoho integration',
+    'Zoho integracja',
+    'Zoho consultant',
+    'Zoho developer',
+    'CRM implementation',
+    'CRM wdrożenie',
+    'business process automation',
+    'automatyzacja procesów biznesowych',
     'REST API',
     'API Integration',
     'Backend Development',
+    'Deluge scripting',
     'Java',
     'Spring Boot',
     'JavaScript',
@@ -39,6 +60,10 @@ const PERSON_SCHEMA = {
     'RabbitMQ',
     'Redis',
     'PostgreSQL',
+    'N8N',
+    'Zapier',
+    'low-code',
+    'no-code',
   ],
   hasCredential: [
     {
@@ -57,11 +82,11 @@ const PERSON_SCHEMA = {
 export default function SEO({ title, description, path = '', lang = 'pl' }) {
   const fullTitle = title
     ? `${title} | Patryk Pawlak`
-    : 'Patryk Pawlak — Backend Integration Developer | Zoho CRM & REST API'
+    : 'Patryk Pawlak - Backend Integration Developer | Zoho CRM & REST API'
 
   const fullDescription =
     description ||
-    'Backend Integration Developer z Warszawy. Specjalista Zoho CRM, Zoho Creator, REST API i automatyzacji procesów biznesowych. Certyfikowany Zoho Developer.'
+    'Backend Integration Developer z Warszawy. Specjalista Zoho CRM, Zoho Creator, Zoho Flow, Zoho Analytics, Zoho Desk — wdrożenia, konfiguracja, utrzymanie i integracje REST API. Certyfikowany Zoho Developer.'
 
   const canonicalUrl = `${BASE_URL}${path}`
 
@@ -73,7 +98,7 @@ export default function SEO({ title, description, path = '', lang = 'pl' }) {
       <meta name="description" content={fullDescription} />
       <meta
         name="keywords"
-        content="Zoho developer, Zoho CRM, Zoho Creator, Zoho integration, REST API, backend developer, integration developer, Warszawa, Poland, Deluge, automatyzacja"
+        content="Zoho developer, Zoho CRM, Zoho Creator, Zoho Flow, Zoho Analytics, Zoho Desk, Zoho One, Zoho Books, Zoho integration, Zoho wdrożenie, Zoho konfiguracja, Zoho utrzymanie, Zoho konsultant, CRM wdrożenie, CRM implementacja, automatyzacja procesów biznesowych, business process automation, REST API, backend developer, integration developer, Deluge, Deluge scripting, low-code, no-code, N8N, Zapier, Warszawa, Poland, Patryk Pawlak"
       />
       <link rel="canonical" href={canonicalUrl} />
 
