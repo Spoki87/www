@@ -43,6 +43,9 @@ const PERSON_SCHEMA = {
     'Zoho integracja',
     'Zoho consultant',
     'Zoho developer',
+    'Zoho praca',
+    'Zoho projekty',
+    'Zoho freelancer',
     'CRM implementation',
     'CRM wdrożenie',
     'business process automation',
@@ -98,7 +101,7 @@ export default function SEO({ title, description, path = '', lang = 'pl' }) {
       <meta name="description" content={fullDescription} />
       <meta
         name="keywords"
-        content="Zoho developer, Zoho CRM, Zoho Creator, Zoho Flow, Zoho Analytics, Zoho Desk, Zoho One, Zoho Books, Zoho integration, Zoho wdrożenie, Zoho konfiguracja, Zoho utrzymanie, Zoho konsultant, CRM wdrożenie, CRM implementacja, automatyzacja procesów biznesowych, business process automation, REST API, backend developer, integration developer, Deluge, Deluge scripting, low-code, no-code, N8N, Zapier, Warszawa, Poland, Patryk Pawlak"
+        content="Zoho developer, Zoho CRM, Zoho Creator, Zoho Flow, Zoho Analytics, Zoho Desk, Zoho One, Zoho Books, Zoho integration, Zoho wdrożenie, Zoho konfiguracja, Zoho utrzymanie, Zoho konsultant, Zoho praca, Zoho projekty, Zoho Projects, CRM wdrożenie, CRM implementacja, automatyzacja procesów biznesowych, business process automation, REST API, backend developer, integration developer, Deluge, Deluge scripting, low-code, no-code, N8N, Zapier, Warszawa, Poland, Patryk Pawlak"
       />
       <link rel="canonical" href={canonicalUrl} />
 
