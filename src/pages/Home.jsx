@@ -27,118 +27,125 @@ export default function Home() {
       <SEO path="/" lang={i18n.language.startsWith('pl') ? 'pl' : 'en'} />
       {/* ── Hero ── */}
       <section className="min-h-screen flex items-center justify-center pt-16">
-        <div className="max-w-2xl mx-auto px-6 py-20 w-full flex flex-col items-center text-center">
+        <div className="max-w-6xl mx-auto px-6 py-20 w-full">
+          <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
 
-          {/* Photo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.1, duration: 0.5, ease: 'easeOut' }}
-            className="relative mb-8"
-          >
-            <div className="absolute inset-0 rounded-full bg-accent/15 blur-xl scale-150" />
-            <div className="absolute -inset-3 rounded-full border border-dashed border-accent/20" />
-            <div className="relative w-52 h-52 rounded-full border-2 border-accent/50 overflow-hidden bg-[#fafafa] flex items-center justify-center">
-              <img
-                src="/photo.jpg"
-                alt="Patryk Pawlak"
-                className="w-full h-full object-contain"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                  if (e.currentTarget.nextSibling) {
-                    e.currentTarget.nextSibling.style.display = 'flex'
-                  }
-                }}
-              />
-              <div
-                style={{ display: 'none' }}
-                className="w-full h-full items-center justify-center flex-col gap-1"
+            {/* Left — text */}
+            <div className="flex-1 flex flex-col items-start text-left">
+
+              {/* Name + title + subtitle */}
+              <motion.div
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.15, duration: 0.45 }}
+                className="flex flex-col items-start mb-8"
               >
-                <span className="text-4xl font-bold text-accent select-none">PP</span>
-                <span className="text-fog text-xs">photo.jpg</span>
-              </div>
+                <p className="text-accent text-sm font-mono tracking-widest uppercase mb-3">
+                  {t('hero.greeting')}
+                </p>
+                <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-snow leading-tight mb-3">
+                  Patryk Pawlak
+                </h1>
+                <p className="text-accent text-xl font-medium mb-6">
+                  {t('hero.title')}
+                </p>
+                <p className="text-slate text-lg leading-relaxed max-w-lg">
+                  {t('hero.subtitle')}
+                </p>
+              </motion.div>
+
+              {/* Social links */}
+              <motion.div
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.35, duration: 0.4 }}
+                className="flex items-center gap-5 mb-8"
+              >
+                <a
+                  href="https://github.com/Sposki87"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-slate hover:text-accent transition-colors text-sm"
+                >
+                  <GitHubIcon size={17} />
+                  GitHub
+                </a>
+                <span className="w-px h-4 bg-rim" />
+                <a
+                  href="https://www.linkedin.com/in/patryk-pawlak-81bb00218/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-slate hover:text-accent transition-colors text-sm"
+                >
+                  <LinkedInIcon size={17} />
+                  LinkedIn
+                </a>
+                <span className="w-px h-4 bg-rim" />
+                <a
+                  href="mailto:patrykpawlak6789@gmail.com"
+                  className="flex items-center gap-2 text-slate hover:text-accent transition-colors text-sm"
+                >
+                  <Mail size={17} />
+                  Email
+                </a>
+              </motion.div>
+
+              {/* CTA buttons */}
+              <motion.div
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.4 }}
+                className="flex items-center gap-4 flex-wrap"
+              >
+                <Link
+                  to="/career"
+                  className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-6 py-3 rounded-lg transition-colors"
+                >
+                  {t('hero.cta_career')}
+                  <ArrowRight size={16} />
+                </Link>
+                <Link
+                  to="/portfolio"
+                  className="flex items-center gap-2 border border-rim text-slate hover:text-snow hover:border-accent/50 text-sm font-medium px-6 py-3 rounded-lg transition-colors"
+                >
+                  {t('hero.cta_portfolio')}
+                </Link>
+              </motion.div>
+
             </div>
-          </motion.div>
 
-          {/* Name + title + subtitle */}
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.25, duration: 0.45 }}
-            className="flex flex-col items-center mb-8"
-          >
-            <p className="text-accent text-xs font-mono tracking-widest uppercase mb-2">
-              {t('hero.greeting')}
-            </p>
-            <h1 className="text-5xl sm:text-6xl font-bold text-snow leading-tight mb-2">
-              Patryk Pawlak
-            </h1>
-            <p className="text-accent text-lg font-medium mb-5">
-              {t('hero.title')}
-            </p>
-            <p className="text-slate text-base leading-relaxed max-w-md">
-              {t('hero.subtitle')}
-            </p>
-          </motion.div>
+            {/* Right — photo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.5, ease: 'easeOut' }}
+              className="relative shrink-0"
+            >
+              <div className="absolute inset-0 rounded-full bg-accent/15 blur-xl scale-150" />
+              <div className="absolute -inset-4 rounded-full border border-dashed border-accent/20" />
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-accent/50 overflow-hidden bg-[#fafafa] flex items-center justify-center">
+                <img
+                  src="/photo.jpg"
+                  alt="Patryk Pawlak"
+                  className="w-full h-full object-contain"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none'
+                    if (e.currentTarget.nextSibling) {
+                      e.currentTarget.nextSibling.style.display = 'flex'
+                    }
+                  }}
+                />
+                <div
+                  style={{ display: 'none' }}
+                  className="w-full h-full items-center justify-center flex-col gap-1"
+                >
+                  <span className="text-4xl font-bold text-accent select-none">PP</span>
+                  <span className="text-fog text-xs">photo.jpg</span>
+                </div>
+              </div>
+            </motion.div>
 
-          {/* Social links */}
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.45, duration: 0.4 }}
-            className="flex items-center justify-center gap-5 mb-8"
-          >
-            <a
-              href="https://github.com/Sposki87"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-slate hover:text-accent transition-colors text-sm"
-            >
-              <GitHubIcon size={17} />
-              GitHub
-            </a>
-            <span className="w-px h-4 bg-rim" />
-            <a
-              href="https://www.linkedin.com/in/patryk-pawlak-81bb00218/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-slate hover:text-accent transition-colors text-sm"
-            >
-              <LinkedInIcon size={17} />
-              LinkedIn
-            </a>
-            <span className="w-px h-4 bg-rim" />
-            <a
-              href="mailto:patrykpawlak6789@gmail.com"
-              className="flex items-center gap-2 text-slate hover:text-accent transition-colors text-sm"
-            >
-              <Mail size={17} />
-              Email
-            </a>
-          </motion.div>
-
-          {/* CTA buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.4 }}
-            className="flex items-center justify-center gap-4 flex-wrap"
-          >
-            <Link
-              to="/career"
-              className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-6 py-3 rounded-lg transition-colors"
-            >
-              {t('hero.cta_career')}
-              <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/portfolio"
-              className="flex items-center gap-2 border border-rim text-slate hover:text-snow hover:border-accent/50 text-sm font-medium px-6 py-3 rounded-lg transition-colors"
-            >
-              {t('hero.cta_portfolio')}
-            </Link>
-          </motion.div>
-
+          </div>
         </div>
       </section>
 
