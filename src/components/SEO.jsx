@@ -6,6 +6,7 @@ const PERSON_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Patryk Pawlak',
+  alternateName: ['Patryk Pawlak developer', 'Patryk Pawlak Zoho', 'Patryk Pawlak programista'],
   url: BASE_URL,
   email: 'patrykpawlak6789@gmail.com',
   jobTitle: 'Backend Integration Developer',
@@ -116,7 +117,7 @@ export default function SEO({ title, description, path = '', lang = 'pl' }) {
       <meta name="description" content={fullDescription} />
       <meta
         name="keywords"
-        content="Zoho, Zoho Polska, Zoho Poland, Zoho developer, Zoho programista, Zoho wdrożeniowiec, człowiek od Zoho, specjalista od Zoho, Zoho specjalista, Zoho ekspert, Zoho partner, Zoho CRM, Zoho Creator, Zoho Flow, Zoho Analytics, Zoho Desk, Zoho One, Zoho Books, Zoho integration, Zoho wdrożenie, Zoho konfiguracja, Zoho utrzymanie, Zoho konsultant, Zoho praca, Zoho projekty, Zoho Projects, Zoho freelancer, CRM wdrożenie, CRM implementacja, automatyzacja procesów biznesowych, business process automation, REST API, backend developer, integration developer, Deluge, Deluge scripting, low-code, no-code, N8N, Zapier, Warszawa, Poland, Patryk Pawlak"
+        content="Patryk Pawlak, Patryk Pawlak developer, Patryk Pawlak Zoho, Patryk Pawlak Warszawa, Patryk Pawlak programista, Zoho, Zoho Polska, Zoho Poland, Zoho developer, Zoho programista, Zoho wdrożeniowiec, człowiek od Zoho, specjalista od Zoho, Zoho specjalista, Zoho ekspert, Zoho partner, Zoho CRM, Zoho Creator, Zoho Flow, Zoho Analytics, Zoho Desk, Zoho One, Zoho Books, Zoho integration, Zoho wdrożenie, Zoho konfiguracja, Zoho utrzymanie, Zoho konsultant, Zoho praca, Zoho projekty, Zoho Projects, Zoho freelancer, CRM wdrożenie, CRM implementacja, automatyzacja procesów biznesowych, business process automation, REST API, backend developer, integration developer, Deluge, Deluge scripting, low-code, no-code, N8N, Zapier, Warszawa, Poland, Patryk Pawlak"
       />
       <link rel="canonical" href={canonicalUrl} />
 
