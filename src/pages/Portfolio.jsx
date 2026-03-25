@@ -113,7 +113,7 @@ export default function Portfolio() {
                 <div className="space-y-3">
                   {project.backendTech && (
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-fog text-xs font-semibold uppercase tracking-widest w-16 shrink-0">
+                      <span className="text-fog text-xs font-semibold uppercase tracking-widest w-20 shrink-0">
                         {t('portfolio.tech_backend')}
                       </span>
                       {project.backendTech.map((tech) => (
@@ -128,7 +128,7 @@ export default function Portfolio() {
                   )}
                   {project.frontendTech && (
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-fog text-xs font-semibold uppercase tracking-widest w-16 shrink-0">
+                      <span className="text-fog text-xs font-semibold uppercase tracking-widest w-20 shrink-0">
                         {t('portfolio.tech_frontend')}
                       </span>
                       {project.frontendTech.map((tech) => (
