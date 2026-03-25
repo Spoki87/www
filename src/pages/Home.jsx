@@ -62,7 +62,7 @@ export default function Home() {
                 className="flex items-center gap-5 mb-8"
               >
                 <a
-                  href="https://github.com/Sposki87"
+                  href="https://github.com/Spoki87"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-slate hover:text-accent transition-colors text-sm"

@@ -23,8 +23,8 @@ export const projects = [
     ],
     frontendTech: ['React 19', 'Tailwind CSS', 'Recharts'],
     links: {
-      backend: 'https://github.com/Sposki87/Subscription-backend',
-      frontend: 'https://github.com/Sposki87/Subscription-frontend',
+      backend: 'https://github.com/Spoki87/Subscription-backend',
+      frontend: 'https://github.com/Spoki87/Subscription-frontend',
       live: 'https://subscription.ppawlak.com',
     },
   },

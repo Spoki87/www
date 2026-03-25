@@ -19,7 +19,7 @@ const PERSON_SCHEMA = {
     addressCountry: 'PL',
   },
   sameAs: [
-    'https://github.com/Sposki87',
+    'https://github.com/Spoki87',
     'https://www.linkedin.com/in/patryk-pawlak-81bb00218/',
   ],
   knowsAbout: [

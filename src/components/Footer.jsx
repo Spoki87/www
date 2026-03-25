@@ -10,7 +10,7 @@ export default function Footer() {
         </p>
         <div className="flex items-center gap-5">
           <a
-            href="https://github.com/Sposki87"
+            href="https://github.com/Spoki87"
             target="_blank"
             rel="noopener noreferrer"
             className="text-fog hover:text-accent transition-colors"
