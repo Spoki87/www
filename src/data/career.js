@@ -113,4 +113,9 @@ export const certifications = [
     name: 'Zoho CRM Certification',
     issuer: 'Zoho Corporation',
   },
+  {
+    id: 3,
+    name: 'Zoho Analytics Certification',
+    issuer: 'Zoho Corporation',
+  },
 ]

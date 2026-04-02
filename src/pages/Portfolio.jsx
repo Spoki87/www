@@ -34,7 +34,6 @@ export default function Portfolio() {
           <div className="mb-16">
             <h1 className="text-4xl font-bold text-snow mb-3">{t('portfolio.title')}</h1>
             <div className="w-12 h-1 bg-accent rounded-full mb-4" />
-            <p className="text-slate">{t('portfolio.subtitle')}</p>
           </div>
 
           {/* Project cards */}
@@ -145,17 +144,6 @@ export default function Portfolio() {
               </motion.div>
             ))}
           </div>
-
-          {/* Coming soon */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="mt-16 text-center"
-          >
-            <p className="text-fog text-sm font-mono">{t('portfolio.coming_soon')}</p>
-          </motion.div>
 
         </div>
       </div>

@@ -41,13 +41,11 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Sprawdź co buduję",
     "view_github": "GitHub",
     "view_live": "Demo na żywo",
     "backend": "Backend",
     "frontend": "Frontend",
     "tech_backend": "Backend",
-    "tech_frontend": "Frontend",
-    "coming_soon": "// więcej projektów wkrótce"
+    "tech_frontend": "Frontend"
   }
 }

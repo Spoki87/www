@@ -22,7 +22,6 @@ export default function Navbar() {
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/career', label: t('nav.career') },
-    { to: '/case-studies', label: t('nav.case_studies') },
     { to: '/portfolio', label: t('nav.portfolio') },
   ]
 

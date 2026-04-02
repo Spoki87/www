@@ -5,7 +5,6 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Career from './pages/Career'
-import CaseStudies from './pages/CaseStudies'
 import Portfolio from './pages/Portfolio'
 
 function AnimatedRoutes() {
@@ -15,7 +14,6 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<Career />} />
-        <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </AnimatePresence>
